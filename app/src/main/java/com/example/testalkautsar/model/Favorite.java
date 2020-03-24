@@ -7,8 +7,6 @@ import android.os.Parcelable;
 
 public class Favorite implements Parcelable {
 
-
-
     private int id;
     private String title;
     private String release_date;

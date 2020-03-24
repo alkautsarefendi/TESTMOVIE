@@ -2,12 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.testalkautsar.UpcomingFragment">
+    tools:context=".UpcomingFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:id="@+id/frameRecycler"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="7dp"
+            android:id="@+id/movie_now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>

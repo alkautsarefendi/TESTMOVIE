@@ -18,7 +18,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.d3mstudio.catalogmovie.R;
 import com.example.testalkautsar.model.MovieModel;
 import com.example.testalkautsar.model.MovieResponse;
 
@@ -54,7 +53,7 @@ public class NowPlayingFragment extends Fragment {
         final RecyclerView recyclerView = getActivity().findViewById(R.id.movie_recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        Call<MovieResponse> call = apiService.getNowPlaying(API_KEY);
+        Call<MovieResponse> call = apiService.getNowPlaying("b5a9de87a5ad62c82342ed3191caa55b");
         call.enqueue(new Callback<MovieResponse>() {
             @Override
             public void onResponse(Call<MovieResponse>call, Response<MovieResponse> response) {
